@@ -66,7 +66,7 @@ with sr.Microphone() as source:
             print('The program is completed')
             
         except sr.UnknownValueError as err:
-            print("Hemant Speech Recognition could not understand audio; {0}".format(err))
+            print("Speech Recognition could not understand audio; {0}".format(err))
             #speak("Sorry")
         except sr.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
